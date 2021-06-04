@@ -14,3 +14,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
