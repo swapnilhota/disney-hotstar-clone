@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 const Header = (props) => {
     return (
-        <Nav>Header</Nav>
+        <Nav>
+            <Logo>
+                <img src="/images/logo.svg" alt="Disney+" />
+            </Logo>
+        </Nav>
     );
 };
 
@@ -20,5 +24,7 @@ const Nav = styled.nav`
     letter-spacing: 16px;
     z-index: 3;
 `;
+
+const Logo = styled.a``;
 
 export default Header;
