@@ -49,9 +49,15 @@ const BgImage = styled.div`
 `;
 
 const CTA = styled.div`
-
+    margin-bottom: 2vw;
 `;
 
-const CTALogoOne = styled.img``;
+const CTALogoOne = styled.img`
+    margin-bottom: 12px;
+    max-width: 600px;
+    min-height: 1px;
+    display: block;
+    width: 100%;
+`;
 
 export default Login;
