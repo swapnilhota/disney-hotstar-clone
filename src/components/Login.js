@@ -50,6 +50,19 @@ const BgImage = styled.div`
 
 const CTA = styled.div`
     margin-bottom: 2vw;
+    max-width: 650px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    transition-timing-function: ease-out;
+    transition: opacity 0.2s;
+    width: 100%;
 `;
 
 const CTALogoOne = styled.img`
