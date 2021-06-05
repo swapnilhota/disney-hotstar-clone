@@ -48,4 +48,10 @@ const BgImage = styled.div`
     z-index: -1;
 `;
 
+const CTA = styled.div`
+
+`;
+
+const CTALogoOne = styled.img``;
+
 export default Login;
