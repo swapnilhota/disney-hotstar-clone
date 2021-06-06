@@ -131,6 +131,11 @@ const NavMenu = styled.div`
 
 const Login = styled.a`
     background-color: rgb(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
 `;
 
 export default Header;
