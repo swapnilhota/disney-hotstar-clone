@@ -28,6 +28,9 @@ const Header = (props) => {
                     <span>SERIES</span>
                 </a>
             </NavMenu>
+            <Login>
+                Login
+            </Login>
         </Nav>
     );
 };
@@ -124,6 +127,10 @@ const NavMenu = styled.div`
     @media (max-width: 768px) {
         display: none;
     }
+`;
+
+const Login = styled.a`
+    background-color: rgb(0, 0, 0, 0.6);
 `;
 
 export default Header;
