@@ -9,8 +9,8 @@ const Header = (props) => {
             <NavMenu>
                 <a href="/home">
                     <img src="/images/home-icon.svg" alt="HOME" />
+                    <span>HOME</span>
                 </a>
-                <span>HOME</span>
             </NavMenu>
         </Nav>
     );
@@ -60,7 +60,24 @@ const NavMenu = styled.div`
     a{
         display: flex;
         align-items: center;
-        margin-left: 0 12px;
+        padding: 0 12px;
+
+        img {
+            height: 20px;
+            min-width: 20px;
+            width: 20px;
+            z-index: auto;
+        }
+
+        span {
+            color: rgb(249, 249, 249);
+            font-size: 13px;
+            letter-spacing: 1.42px;
+            line-height: 1.08px;
+            padding: 2px 0px;
+            white-space: nowrap;
+            position: relative;
+        }
     }
 
     @media (max-width: 768px) {
