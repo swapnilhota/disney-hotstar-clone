@@ -42,35 +42,39 @@ const Header = (props) => {
             </Logo>
             {
                 !username ?
-                    <Login onClick={handleAuth}>Login</Login>
+                    (
+                        <Login onClick={handleAuth}>Login</Login>
+                    )
                     :
-                    <>
-                        <NavMenu>
-                            <a href="/home">
-                                <img src="/images/home-icon.svg" alt="HOME" />
-                                <span>HOME</span>
-                            </a>
-                            <a>
-                                <img src="/images/search-icon.svg" alt="HOME" />
-                                <span>SEARCH</span>
-                            </a>
-                            <a>
-                                <img src="/images/watchlist-icon.svg" alt="HOME" />
-                                <span>WATCHLIST</span>
-                            </a>
-                            <a>
-                                <img src="/images/movie-icon.svg" alt="HOME" />
-                                <span>MOVIES</span>
-                            </a>
-                            <a>
-                                <img src="/images/series-icon.svg" alt="HOME" />
-                                <span>SERIES</span>
-                            </a>
-                        </NavMenu>
-                        <UserImg src={userPhoto} alt={username} />
-                    </>
+                    (
+                        <>
+                            <NavMenu>
+                                <a href="/home">
+                                    <img src="/images/home-icon.svg" alt="HOME" />
+                                    <span>HOME</span>
+                                </a>
+                                <a>
+                                    <img src="/images/search-icon.svg" alt="HOME" />
+                                    <span>SEARCH</span>
+                                </a>
+                                <a>
+                                    <img src="/images/watchlist-icon.svg" alt="HOME" />
+                                    <span>WATCHLIST</span>
+                                </a>
+                                <a>
+                                    <img src="/images/movie-icon.svg" alt="HOME" />
+                                    <span>MOVIES</span>
+                                </a>
+                                <a>
+                                    <img src="/images/series-icon.svg" alt="HOME" />
+                                    <span>SERIES</span>
+                                </a>
+                            </NavMenu>
+                            <UserImg src={userPhoto} alt={username} />
+                        </>
+                    )
             }
-        </Nav>
+        </Nav >
     );
 };
 
@@ -184,6 +188,8 @@ const Login = styled.a`
     }
 `;
 
-const UserImg = styled.img``;
+const UserImg = styled.img`
+    height: 100%;
+`;
 
 export default Header;
