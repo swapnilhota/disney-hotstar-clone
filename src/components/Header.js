@@ -215,6 +215,11 @@ const Dropdown = styled.div`
     border: 1px solid rgba(151, 151, 151, 0.34);
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 100px;
+    opacity: 0;
 `;
 
 const SignOut = styled.div``;
