@@ -104,7 +104,6 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 36px;
-    letter-spacing: 16px;
     z-index: 3;
 `;
 
@@ -222,6 +221,27 @@ const Dropdown = styled.div`
     opacity: 0;
 `;
 
-const SignOut = styled.div``;
+const SignOut = styled.div`
+    position: relative;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    ${UserImg} {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        ${Dropdown} {
+            opacity: 1;
+            transition-duration: 0.5s;
+        }
+    }
+`;
 
 export default Header;
