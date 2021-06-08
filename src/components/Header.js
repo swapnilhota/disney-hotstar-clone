@@ -80,7 +80,12 @@ const Header = (props) => {
                                     <span>SERIES</span>
                                 </a>
                             </NavMenu>
-                            <UserImg src={userPhoto} alt={username} />
+                            <SignOut>
+                                <UserImg src={userPhoto} alt={username} />
+                                <Dropdown>
+                                    <span onClick={handleAuth}>Sign Out</span>
+                                </Dropdown>
+                            </SignOut>
                         </>
                     )
             }
@@ -201,5 +206,17 @@ const Login = styled.a`
 const UserImg = styled.img`
     height: 100%;
 `;
+
+const Dropdown = styled.div`
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    background: rgb(19, 19, 19);
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+`;
+
+const SignOut = styled.div``;
 
 export default Header;
