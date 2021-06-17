@@ -56,6 +56,14 @@ const Carousel = styled(Slider)`
     .slick-list {
         overflow: initial;
     }
+
+    .slick-prev {
+        left: -75px;
+    }
+
+    .slick-next {
+        right: -75px;
+    }
 `;
 
 export default ImgSlider;
