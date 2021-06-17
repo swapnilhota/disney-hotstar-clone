@@ -40,7 +40,18 @@ const Carousel = styled(Slider)`
             opacity: 1;
             transition: opacity 0.2s ease 0s;
         }
-    }    
+    }
+    
+    ul li button {
+        &:before {
+            font-size: 10px;
+            color: rgb(150, 158, 171);
+        }
+    }
+
+    li.slick-active button:before {
+        color: white;
+    }
 `;
 
 export default ImgSlider;
