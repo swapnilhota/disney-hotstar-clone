@@ -52,6 +52,10 @@ const Carousel = styled(Slider)`
     li.slick-active button:before {
         color: white;
     }
+
+    .slick-list {
+        overflow: initial;
+    }
 `;
 
 export default ImgSlider;
