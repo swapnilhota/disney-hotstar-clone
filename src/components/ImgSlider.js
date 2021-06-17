@@ -21,6 +21,21 @@ const ImgSlider = (props) => {
                     <img src="/images/slider-badging.jpg" alt="" />
                 </a>
             </Wrap>
+            <Wrap>
+                <a>
+                    <img src="/images/slider-scale.jpg" alt="" />
+                </a>
+            </Wrap>
+            <Wrap>
+                <a>
+                    <img src="/images/slider-badag.jpg" alt="" />
+                </a>
+            </Wrap>
+            <Wrap>
+                <a>
+                    <img src="/images/slider-scales.jpg" alt="" />
+                </a>
+            </Wrap>
         </Carousel>
 
     );
